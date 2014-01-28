@@ -1,5 +1,32 @@
-$background: #c0c0c0;
+$email-primary: #090;
+$email-secondary: #c0c0c0;
+$email-background: #fff;
+$email-font: "Helvetica", Arial, sans-serif;
+$email-padding: 20px;
 
-body {
-  background: $background;
+#header {
+  background-color: $email-secondary;
+  padding: $email-padding;
+}
+
+#content {
+  padding: $email-padding;
+}
+
+#footer {
+  background: $email-primary;
+  color: #fff;
+  padding: $email-padding;
+}
+
+p {
+  color: $email-primary;
+  font-family: $email-font;
+}
+
+a {
+  color: $email-primay;
+  &:hover {
+    text-decoration: underline;
+  }
 }

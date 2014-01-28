@@ -1,1 +1,1 @@
-# Premailer::Rails.config.merge!(remove_ids: true, remove_comments: true)
+Premailer::Rails.config.merge!(preserve_styles: false, remove_comments: true)

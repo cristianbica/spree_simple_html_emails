@@ -1,40 +1,25 @@
-SpreeSimpleHtmlEmails
+Spree Simple HTML Emails
 =====================
 
-Introduction goes here.
+Wraps Sprees default text.erb emails in a html wrapper, then parses the original text files rather than using extra templates
 
 Installation
 ------------
 
-Add spree_simple_html_emails to your Gemfile:
+Add spree_simple_html_emails to your `Gemfile`:
 
 ```ruby
-gem 'spree_simple_html_emails'
+gem 'spree_simple_html_emails', git: 'https://github.com/200Creative/spree_simple_html_emails', branch: 'master'
 ```
 
-Bundle your dependencies and run the installation generator:
-
-```shell
-bundle
-bundle exec rails g spree_simple_html_emails:install
-```
-
-Testing
--------
-
-Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
-
-```shell
-bundle
-bundle exec rake test_app
-bundle exec rspec spec
-```
-
-When testing your applications integration with this extension you may use it's factories.
-Simply add this require statement to your spec_helper:
+This uses premailer to inline CSS styles. premailer-rails requires either [nokogiri] or [hpricot]. It doesn't list them as
+a dependency so you can choose which one to use. Since hpricot is no longer
+maintained, I suggest you to go with nokogiri. Add either one to your `Gemfile`:
 
 ```ruby
-require 'spree_simple_html_emails/factories'
+gem 'nokogiri'
+# or
+gem 'hpricot'
 ```
 
-Copyright (c) 2014 [name of extension creator], released under the New BSD License
+If both gems are loaded for some reason, premailer chooses hpricot.

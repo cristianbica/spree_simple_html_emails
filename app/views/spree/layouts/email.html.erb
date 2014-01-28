@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <style type="text/css">
+      <%= Rails.application.assets["store/spree_simple_html_emails.css.scss"].to_s %>
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <%= render :partial => 'spree/shared/email/header' %>
+      </header>
+      <section id="main">
+        <%= yield %>
+      </section>
+      <footer>
+        <%= render :partial => 'spree/shared/email/footer' %>
+      </footer>
+    </div>
+  </body>
+</html>

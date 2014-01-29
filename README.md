@@ -1,7 +1,14 @@
 Spree Simple HTML Emails
 =====================
 
-Wraps Sprees default text.erb emails in a html wrapper, then parses the original text files rather than using extra templates
+Sends easily configurable, scss powered, localised html multipart emails from spree. Insired by spree-html-email, but brought up to date with spree 2-1-stable.
+
+* Automatically includes your site logo
+* Set your site colours just by editing a few SCSS variables
+* Sets links back to your site automatically
+* Fully localised
+
+All emails are direct copies of spree's emails with some light HTML formatting, and the original `content.text.erb` from spree is still sent as a multi part for none HTML clients.
 
 Installation
 ------------
@@ -21,5 +28,3 @@ gem 'nokogiri'
 # or
 gem 'hpricot'
 ```
-
-If both gems are loaded for some reason, premailer chooses hpricot.

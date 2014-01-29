@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_simple_html_emails'
   s.version     = '2.1'
-  s.summary     = 'Sends Sprees default text.erb emails as html'
-  s.description = 'Wraps Sprees default text.erb emails in a html wrapper, then parses the original text files rather than using extra templates'
+  s.summary     = 'Sends easily configurable, scss powered, localised html multipart emails from spree'
+  s.description = 'Sends easily configurable, scss powered, localised html multipart emails from spree'
   s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'Alex James'

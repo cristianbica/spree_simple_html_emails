@@ -1,13 +1,13 @@
 Spree Simple HTML Emails
 =====================
 
-Sends easily configurable, scss powered, localised html multipart emails from spree.
+Sends easily configurable, SCSS powered, localised, HTML multipart emails from Spree.
 
 * Automatically includes your site logo
 * Set your site colours just by editing a few SCSS variables
 * Sets email footer links back to your site automatically
 * Fully localised
-* Send HTML/plain text multi part emails so all clients are supported
+* Sends HTML/plain text multi part emails so all clients are supported
 * Includes support for `spree_auth_devise`
 
 All emails are direct copies of spree's emails with some light HTML formatting, and the original `content.text.erb` from spree is still sent as a multi part for none HTML clients.
@@ -49,7 +49,7 @@ Only use branches marked as `-stable` in production, any others are likely to be
 Customizing
 -------
 
-Running the above `spree_simple_html_emails:install` command copies the stylesheet to `app/assets/stylesheets/spree/frontend/spree_emails.css.scss`. Use this as your base stylesheet and edit as required.
+Running the above `spree_simple_html_emails:install` command copies the stylesheet to `app/assets/stylesheets/spree/frontend/spree_simple_html_emails.css.scss`. Use this as your base stylesheet and edit as required.
 
 The default variables avaiable to build a custom theme are:
 

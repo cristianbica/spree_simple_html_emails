@@ -69,4 +69,4 @@ Contributing
 Licence
 -------
 
-Copyright Alex James ([200creative.com](http://200creative.com)) and released under the BSD Licence.
+Copyright Alex James ([200creative.com](http://200creative.com)) and released under the GNU Licence.

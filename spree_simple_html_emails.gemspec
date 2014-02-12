@@ -5,6 +5,7 @@ Gem::Specification.new do |s|
   s.version     = '2.1'
   s.summary     = 'Sends easily configurable, scss powered, localised html multipart emails from spree'
   s.description = 'Sends easily configurable, scss powered, localised html multipart emails from spree'
+  s.license     = 'GNU-2.0'
   s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'Alex James'

@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.1.0'
-  s.add_dependency 'nokogiri'
-  s.add_dependency 'premailer-rails', '~> 1.6.1'
+  s.add_runtime_dependency 'spree_core', '~> 2.1'
+  s.add_runtime_dependency 'premailer-rails', '~> 1.6', '>= 1.6.1'
+  s.add_runtime_dependency 'nokogiri'
 
   s.add_development_dependency 'capybara', '~> 2.1'
   s.add_development_dependency 'coffee-rails'

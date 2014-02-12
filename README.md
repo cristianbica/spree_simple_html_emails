@@ -9,6 +9,7 @@ Sends easily configurable, SCSS powered, localised, HTML multipart emails from S
 * Fully localised
 * Sends HTML/plain text multi part emails so all clients are supported
 * Includes support for `spree_auth_devise`
+* Uses [premailer-rails](https://github.com/fphilipe/premailer-rails) to inline CSS styles. 
 
 All emails are direct copies of spree's emails with some light HTML formatting, and the original `content.text.erb` from spree is still sent as a multi part for none HTML clients.
 
@@ -18,11 +19,8 @@ Installation
 Add spree_simple_html_emails to your `Gemfile`:
 
 ```ruby
-gem 'nokogiri'
 gem 'spree_simple_html_emails', git: 'https://github.com/200Creative/spree_simple_html_emails', branch: '2-1-stable'
 ```
-
-(This uses [premailer] to inline CSS styles. [premailer-rails] requires either [nokogiri] or [hpricot]. It doesn't list them as a dependency so you can choose which one to use.)
 
 And run
 

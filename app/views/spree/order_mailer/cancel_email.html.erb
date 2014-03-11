@@ -5,12 +5,29 @@
 <div class="email-divider"></div>
 <p><%= Spree.t('order_mailer.cancel_email.order_summary_canceled') %></p>
 <div class="email-divider"></div>
+<table>
 <% @order.line_items.each do |item| %>
-  <%= item.variant.sku %> <%= raw(item.variant.product.name) %> <%= raw(item.variant.options_text) -%> (<%=item.quantity%>) @ <%= item.single_money %> = <%= item.display_amount %>
+  <tr>
+  <td><%= item.variant.sku %></td>
+  <td><%= raw(item.variant.product.name) %></td>
+  <td><%= raw(item.variant.options_text) %></td>
+  <td><%=item.quantity%></td>
+  <td><%= item.single_money %></td>
+  <td><%= item.display_amount %></td>
+  </tr>
 <% end %>
+</table>
 <div class="email-divider"></div>
-<%= Spree.t('order_mailer.cancel_email.subtotal', :subtotal => @order.display_item_total) %>
+
+<h4><%= Spree.t('order_mailer.cancel_email.subtotal', :subtotal => @order.display_item_total) %></h4>
+
+<table>
 <% @order.adjustments.eligible.each do |adjustment| %>
-  <%= raw(adjustment.label) %> <%= adjustment.display_amount %>
+  <tr>
+    <td><%= raw(adjustment.label) %></td>
+    <td><%= adjustment.display_amount %></td>
+  </tr>
 <% end %>
-<p><%= Spree.t('order_mailer.cancel_email.total', :total => @order.display_total) %></p>
+</table>
+
+<h4><%= Spree.t('order_mailer.cancel_email.total', :total => @order.display_total) %></h4>

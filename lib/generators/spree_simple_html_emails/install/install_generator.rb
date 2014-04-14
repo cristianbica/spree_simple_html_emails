@@ -26,7 +26,7 @@ module SpreeSimpleHtmlEmails
           # run 'bundle exec rake db:migrate'
         # else
           # puts 'Skipping rake db:migrate, don\'t forget to run it!'
-        end
+        # end
       end
     end
   end
